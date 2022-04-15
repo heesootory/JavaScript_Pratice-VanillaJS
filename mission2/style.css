@@ -1,0 +1,16 @@
+h1{
+    color: white;
+}
+
+.normal{
+    background-color : purple;
+    transition : background-color 0.5s ease-in-out;
+}
+.tooBig{
+    background-color : yellow;
+    transition : background-color 0.5s ease-in-out;
+}
+.tooSmall{
+    background-color : blue;
+    transition : background-color 0.5s ease-in-out;
+}
