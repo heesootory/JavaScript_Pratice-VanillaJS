@@ -30,3 +30,6 @@ function handleNumber(event){
 
 
 FORM.addEventListener("submit", handleNumber);
+
+
+// document에서 뽑아온 value값은 string이므로, 항상 타입을 확인하고 사용.
