@@ -2,47 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Welcome to KoKoa Talk</title>
-
+    <link href = "css/style.css" rel="stylesheet"/>
+    <title>Momentum App</title>
 </head>
 <body>
-    <div class = "status-bar">
-        <div class = "status-bar__column">
-            <span>No Service</span>
-            <!--TO Do: Wifi Icon-->
-            <i class="fa-solid fa-wifi"></i>
-        </div>
-        <div class = "status-bar__column">
-            <span>18:43</span>
-        </div>
-        <div class = "status-bar__column">
-            <span>110%</span>
-            <!--Battery Icon-->
-            <i class="fa-solid fa-battery-full fa-2x"></i>
-            <!--Lighting Icon-->
-            <i class="fa-solid fa-bolt"></i>
-        </div>
-    </div>
-    <!-- 상태바! -->
+    <script defer src="js/greeting.js"></script>
+    <script defer src="js/clock.js"></script>
+    <script defer src="js/quotes.js"></script>
+    <script defer src="js/background.js"></script>
 
-    <header class = "welcome-header">
-        <h1 class = "welcome-header__title">Welcome to KoKoa Clone</h1>
-        <p class = "welcome-header__text">
-            if you have a Kako Account, log in with yous email or phone number.
-        </p>
-    </header>
-
-    <form id = "login-form">
-        <input type = "text" placeholder="Email or phone number"/>
-        <input type = "text" placeholder="Password"/>
-        <input type = "submit" value = "Log in"/>
-        <a href = "#">Find KaKao Account or Password</a>
+    <form class = "hidden" id="login-form">
+        <input 
+            type="text"  
+            required 
+            maxlength = "15"
+            placeholder="What is your name?" />
+        <input type = "submit" value = "Log In">
     </form>
-
-
-    <script src="https://kit.fontawesome.com/4b09fceca6.js" crossorigin="anonymous"></script>
+    <h2 id="clock">00:00:00</h2>
+    <h1 id = "greeting" class = "hidden"></h1>
+    <div id = "quote">  
+        <span></span>
+        <span></span>
+    </div>
+    
 </body>
 </html>
