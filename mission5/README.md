@@ -1,3 +1,6 @@
 # mission 5 - 그라데이션 배경색 만들기
 
+<<<<<<< HEAD
 <img src="https://user-images.githubusercontent.com/102863300/164452922-ce7a4f5e-657c-4380-8fd6-26a7a2329997.gif">
+=======
+>>>>>>> fefb60c (Update README.md)
