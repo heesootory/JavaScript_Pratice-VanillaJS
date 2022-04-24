@@ -10,5 +10,7 @@ function getClock(){
 getClock();
 setInterval(getClock, 1000);
 
+//setInterval : (호출함수, ms시간마다)
+
 
 

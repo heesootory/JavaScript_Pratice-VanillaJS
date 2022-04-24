@@ -7,7 +7,9 @@ const USERNAME_KEY = "username";
 
 function onLoginSubmit(event) {
     event.preventDefault();     
-    const username = loginInput.value;
+    const username = loginInput.value;      
+    //여기서 받지 않고 전역적으로 받게되면, 비어있는 경우에는 빈값을 먼저 받고
+    //const이므로 새로운 이름을 적어도 변하지 않는다.
     loginForm.classList.add(HIDDE_CLASSNAME);   //html의 변수에서 class를 삭제, 추가 할 수 있다.
     localStorage.setItem(USERNAME_KEY, username);   
     paintGreetings(username);

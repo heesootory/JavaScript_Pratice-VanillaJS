@@ -43,16 +43,17 @@ function paintToDo(newToDo){        //저장한 내용 html에 그리기!
 }
 
 function handleToDoSubmit(event){
-    event.preventDefault();     //submit 의 자동새로고침 방지
+    event.preventDefault();     //submitnewToDoObj 의 자동새로고침 방지
     const newToDo = toDoInput.value;   //html에서 기입한, todo내용 저장
+    //적은뒤 submit할시에 받아야함으로, 전역변수가 아님.
     toDoInput.value = "";           //input에 있는 내용 비워주기
     const newToDoObj = {            //newToDo를 text가 아닌 객체로 만들어주기
         text: newToDo,
-        id: Date.now(),
+        id: Date.now(),             //id 는 임의로 현재시간을 ms단위로 받아오는 수로 정함.
     };
-    toDos.push(newToDoObj);            // 배열에 객체를 저장
-    paintToDo(newToDoObj);         //html에 그리기
-    saveToDos();                //
+    toDos.push(newToDoObj);         // 배열에 객체를 저장
+    paintToDo(newToDoObj);          //html에 그리기
+    saveToDos();                    //localstorage에 저장
 }
 
 toDoForm.addEventListener("submit", handleToDoSubmit);
