@@ -1,0 +1,15 @@
+.main{
+    height: 150px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    height: 100px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    font-size: 100px;
+}

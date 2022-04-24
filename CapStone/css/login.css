@@ -3,7 +3,7 @@
 }
 
 .login{
-    
+    font-family: 'Square Peg', cursive;
 }
 
 #login-form{
@@ -12,6 +12,5 @@
 }
 
 #greeting{
-
-
+    font-size: 80px;
 }
