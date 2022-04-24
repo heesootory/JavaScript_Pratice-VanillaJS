@@ -1,9 +1,10 @@
 @import "login.css";
 @import "backgroundImage.css";
 @import "quote.css";
-@import "clock.css";
+@import "main.css";
 @import "day.css";
 @import "todo.css";
+@import "menu.css";
 
 * {
     box-sizing: border-box;
@@ -22,14 +23,12 @@ body{
 
 .top{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     height: 80%;
     align-items:center;
+    position: relative;
 }
 
-.main{
-
-}
 
 
 

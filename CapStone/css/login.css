@@ -4,12 +4,37 @@
 
 .login{
     font-family: 'Square Peg', cursive;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #login-form{
-
-
+    border : none;
+    height: 50px;
+    width: 100%;
+    opacity: 0.3;
 }
+
+#login-form input:first-child{
+    font-size: 30px;
+    border: none;
+    height: 100%;
+    width: 100%;
+}
+#login-form input:focus{
+    background-color: thistle;
+}
+
+#login-form input::placeholder{
+    color: black;
+    font-weight: 700;
+}
+
+#login-form input:last-child{
+    display: none;
+}
+
 
 #greeting{
     font-size: 80px;

@@ -1,16 +1,43 @@
 .todo{
     height: 100%;
-    width: 300px;
+    width: 500px;
     padding-top: 100px;
+    position: absolute;
+    right: 70px;
+    
 }
 
 .todo-form input{
+    font-size: 17px;
     border:none;
-    border-bottom: 2px solid thistle;
-    height: 30px;
+    border-bottom: 2px solid black;
+    height: 40px;
     width: 100%;
+    opacity: 0.2;
+    color : black;
+}
+.todo-form input:focus{
+    background-color: thistle;
+}
+.todo-form input:hover{
+    background-color: green;
+}
+.todo-form input::placeholder{
+    font-weight: 600;
+    color: black;
 }
 
 .todo_title{
+    font-size: 30px;
+}
+#todo-list button{
+    font-size: 7px;
+    border: none;
+    margin-left: 10px;
+    opacity: 0.3;
+}
 
+#todo-list span{
+    font-size: 18px;
+    font-weight: 600;
 }

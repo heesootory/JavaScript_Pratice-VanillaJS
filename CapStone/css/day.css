@@ -1,3 +1,16 @@
 .day_info{
-    height: 100%;
+    font-family: 'Playfair Display', serif;
+    position: absolute;
+    left:20px;
+    top: 20px;
+    border: 2px solid thistle;
+    border-radius: 30px;;
+    height: 120px;
+    width: 200px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: thistle;
 }
+

@@ -3,6 +3,7 @@ const city = document.querySelector("#city");
 const weather = document.querySelector("#weather");
 const temp = document.querySelector("#temp");
 
+
 function possible(position){
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
@@ -10,13 +11,14 @@ function possible(position){
 
     fetch(url).then(response => response.json()).then(data =>{
 
+
         const name = data.name;
         const weather_des = data.weather[0].description;
         const temperature = data.main.temp;
 
         weather.innerText = weather_des;
         city.innerText = name;
-        temp.innerText = temperature;
+        temp.innerText = `${temperature}°`;
     });
 }
 
